@@ -6,7 +6,7 @@
 # $ docker push woshilapin/rust-ci:latest
 FROM rust:slim
 
-RUN apt update && apt install --yes libssl-dev pkg-config libcurl4
+RUN apt update && apt install --yes libssl-dev pkg-config curl libcurl4
 RUN rustup component add rustfmt clippy
 RUN cargo install cargo-tomlfmt
 RUN cargo install cargo-tarpaulin
