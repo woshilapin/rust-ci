@@ -7,6 +7,8 @@ comes with the following tools pre-installed:
 - [`clippy`]: static linting of the Rust source code
 - [`cargo-tomlfmt`]: auto-formatting of TOML files
 - [`cargo-tarpaulin`]: code coverage reporting tool for Rust
+- [`cargo-audit`]: audit for security vulnerabilities in crates thanks to
+  [RustSec Advisory Database]
 
 The image is automatically built by [Dockerhub] when a new git tag is published
 or when a push is done on the `master` branch (image `latest` on [DockerHub]).
@@ -16,4 +18,6 @@ The tags correspond to the versions of Rust.
 [`clippy`]: https://github.com/rust-lang/rust-clippy
 [`cargo-tomlfmt`]: https://github.com/tbrand/cargo-tomlfmt
 [`cargo-tarpaulin`]: https://github.com/xd009642/tarpaulin
+[`cargo-audit`]: https://github.com/RustSec/cargo-audit
+[RustSec Advisory Database]: https://github.com/RustSec/advisory-db/
 [DockerHub]: https://hub.docker.com

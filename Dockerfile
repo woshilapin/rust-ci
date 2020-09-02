@@ -10,3 +10,4 @@ RUN apt update && apt install --yes libssl-dev pkg-config curl libcurl4
 RUN rustup component add rustfmt clippy
 RUN cargo install cargo-tomlfmt
 RUN cargo install cargo-tarpaulin
+RUN cargo install cargo-audit
